@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Online</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bloody font link -->
+    <link href="https://fonts.cdnfonts.com/css/bloody" rel="stylesheet" />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+    <!-- start of container div for entire page -->
+    <div class="bg-warning" id="online-order-container">
+      <!--start of box-head div-->
+      <div class="box-head">
+        <h1>Killer Pizza</h1>
+        
+        </div>
+      
+      <!-- end of box-head div -->
+<br>
+<br>
+<br>
+      <!-- start of box-body form -->
+      <form id="box-body">
+        <!-- start of specialty pizzas -->
+        <h1 class="order-online-h1">Specialty Pizzas</h1>
+        <div class="specialty-pizza">
+       <div>
+        <label>Chicken Bacon Ranch Pie</label>
+        <input id="chicken-bacon-ranch" class="ingredients" type="checkbox" onclick="totalPrice()">
+       </div>
+        <div>
+            <label>Small(6 Cut) - $6</label>
+            <input id="small" class="ingredients" type="radio" value="6" onclick="totalPrice()">
+        </div>  
+        <div>
+            <label>Medium(12 cut) - $10.50</label>
+            <input id="medium" class="ingredients" type="radio" value="10.50" onclick="totalPrice()">
+        </div>   
+        <div>
+            <label>Large(14 cut) - $15</label>
+            <input id="large" class="ingredients" type="radio" value="15" onclick="totalPrice()">
+        </div>  
+       
+      <br>
+       
+       <div>
+        <label>Chicken Wing Pie</label>
+        <input id="chicken-wing" class="ingredients" type="checkbox" onclick="totalPrice()">
+        
+       <div>
+           <label>Small(6 cut) - $10</label>
+           <input id="small" class="ingredients" type="radio" value="10" onclick="totalPrice()">
+       </div>  
+       <div>
+           <label>Medium(12 cut) - $14.50</label>
+           <input id="medium" class="ingredients" type="radio" value="14.50" onclick="totalPrice()">
+       </div>   
+       <div>
+           <label>Large(14 cut) - $20</label>
+           <input id="large" class="ingredients" type="radio" value="20" onclick="totalPrice()">
+       </div>  
+       <br>
+       </div>
+       <br>
+       <div>
+        <label>Sausage Pie</label>
+        <input id="sausage-pie" class="ingredients" type="checkbox" onclick="totalPrice()">
+       <div>
+           <label>Small(6 Cut) - $6</label>
+           <input id="small" class="ingredients" type="radio" value="6" onclick="totalPrice()">
+       </div>  
+       <div>
+           <label>Medium(12 cut) - $10.50</label>
+           <input id="medium" class="ingredients" type="radio" value="10.50" onclick="totalPrice()">
+       </div>   
+       <div>
+           <label>Large(14 cut) - $15</label>
+           <input id="large" class="ingredients" type="radio" value="15" onclick="totalPrice()">
+       </div>  
+       <br>
+       </div>
+       
+       <div>
+        <label>Meat Lovers Pie</label>
+        <input id="chicken-bacon-ranch" class="ingredients" type="checkbox" onclick="totalPrice()">
+        
+       <div>
+           <label>Small(6 Cut) - $8</label>
+           <input id="small" class="ingredients" type="radio" value="8" onclick="totalPrice()">
+       </div>  
+       <div>
+           <label>Medium(12 cut) - $14</label>
+           <input id="medium" class="ingredients" type="radio" value="14"  onclick="totalPrice()" >
+       </div>   
+       <div>
+           <label>Large(14 cut) - $23</label>
+           <input id="large" class="ingredients" type="radio" value="23"  onclick="totalPrice()">
+       </div>  
+       </div>
+       <br>
+       <div>
+        <label>Veggie Pie</label>
+        <input id="veggoe-pie" class="ingredients" type="checkbox" onclick="totalPrice()">
+       </div>
+       
+       <div>
+           <label>Small(6 Cut) - $6</label>
+           <input id="small" class="ingredients" type="radio" value="6"  onclick="totalPrice()">
+       </div>  
+       <div>
+           <label>Medium(12 cut) - $10</label>
+           <input id="medium" class="ingredients" type="radio" value="10"  onclick="totalPrice()" >
+       </div>   
+       <div>
+           <label>Large(14 cut) - $14</label>
+           <input id="large" class="ingredients" type="radio" value="14" onclick="totalPrice()">
+       </div>  
+       <!-- END OF SPECIALTY-PIZZA DIV -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        
+<!-- START OF CUSTOMIZE PIZZA -->
+        <h1 class="customize-pizza">Customize Pizza</h1>
+
+        <h3>Size</h3>
+        <div class="size-item">
+            <label>Small(6 cut) - $6</label>
+            <input id="small" class="ingredients" type="radio" value="6" onclick="totalPrice()">
+        </div>  
+        <div class="size-item">
+            <label>Medium(12 cut) - $10.50</label>
+            <input id="medium" class="ingredients" type="radio" value="10.50" onclick="totalPrice()" >
+        </div>   
+        <div class="size-item">
+            <label>Large(14 cut) - $15</label>
+            <input id="large" class="ingredients" type="radio" value="15" onclick="totalPrice()">
+        </div>   
+
+        <h3>Sauce</h3>
+        <div class="sauce-item">
+            <label>Marinara</label>
+            <input id="american-cheese" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="sauce-item">
+            <label>Wing Sauce</label>
+            <input id="american-cheese" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="sauce-item">
+            <label>Sriracha Sauce</label>
+            <input id="american-cheese" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        
+        <h3>Cheeses</h3>
+       
+
+        <div class="cheese-item">
+            <label>American Cheese</label>
+            <input id="american-cheese" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="cheese-item">
+        <label>Pepper Jack</label>
+        <input id="pepper-jack" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="cheese-item">
+        <label>Swiss</label>
+        <input id="swiss" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="cheese-item">
+        <label>Three Cheese</label>
+        <input id="three-cheese" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+        </div>
+        <br>
+        <h3>Meats</h3>
+        <div class="meat-item">
+        <label>No Toppings</label>
+        <input id="no-toppings" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="meat-item">
+        <label>Sausage</label>
+        <input id="sausage" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="meat-item">
+        <label>Pepperoni</label>
+        <input id="pepperoni" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="meat-item">
+        <label>Bacon Bits</label>
+        <input id="bacon-bits" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="meat-item">
+        <label>Grilled Chicken</label>
+        <input id="grilled-chicken" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="meat-item">
+        <label>Crispy Chicken</label>
+        <input id="crispy-chicken" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+        <br> 
+        <h3>Veggies</h3>
+        <div class="veggie-item">
+            <label>No Toppings</label>
+            <input id="no-toppings" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+            </div>
+
+        <div class="veggie-item">
+            <label>Green Peppers</label>
+            <input id="green-peppers" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="veggie-item">
+            <label>Hot Peppers</label>
+            <input id="hot-peppers" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="veggie-item">
+            <label>Mushrooms</label>
+            <input id="mushrooms" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="veggie-item">
+            <label>Olives</label>
+            <input id="olives" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="veggie-item">
+            <label>Diced Tomatoes</label>
+            <input id="diced-tomatoes" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+
+        <div class="veggie-item">
+            <label>Red Peppers</label>
+            <input id="red-peppers" class="ingredients" type="checkbox" value="0" onclick="totalPrice()">
+        </div>
+        <br>
+
+    <h3>Crust Type</h3>
+    <div class="crusts">
+        <label>Thick Crust</label>
+        <input id="thick-crust" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+    </div>
+
+    <div class="crusts">
+        <label>Thin Crust</label>
+        <input id="thin-crust" class="ingredients" type="radio" value="0" onclick="totalPrice()">
+    </div>
+
+    <div class="crusts">
+        <label>Cheesey Crust - $2</label>
+        <input id="cheesey-crust" class="ingredients" type="radio" value="2" onclick="totalPrice()">
+    </div>
+
+    <div class="crusts">
+        <label>Cheesey Garlic Crust $2</label>
+        <input id="cheesey-garlic-crust" class="ingredients" type="radio" value="3" onclick="totalPrice()">
+    </div>
+    
+    <input class="submitOrder" type="submit">
+    <!-- END OF CUSTOMIZE PIZZA -->
+</form>
+
+    
+       
+    
+    
+    <!-- END OF BOX-BODY -->
+</div>
+<!-- end of container for entire page -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

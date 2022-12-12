@@ -1,0 +1,130 @@
+/* start of index.html */
+body {
+  background-color: antiquewhite;
+}
+
+.header,
+html {
+  font-family: "Bloody", sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  margin-top: 50px;
+  margin-left: 420px;
+  color: red;
+}
+
+.header-button {
+  color: red;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+/* end of index.html */
+
+/* Order Online */
+
+#online-order-container {
+  font-family: bloody, sans-serif;
+}
+
+.box-head {
+  height: auto;
+  width: auto;
+}
+
+.order-online-h1 {
+  color: cadetblue;
+}
+
+.specialty-pizza {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+
+  padding: 3px;
+}
+
+.specialty-ingredients {
+  font-size: 3px;
+  margin: 3px;
+}
+
+.customize-pizza {
+  color: cadetblue;
+}
+
+/* END OF BOX-HEAD and contents */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* START OF BOX-BODY and it contents */
+
+h3 {
+  color: red;
+}
+.box-body {
+  margin: auto;
+  width: auto;
+}
+
+.size-item {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.sauce-item {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.cheese-item {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.meat-item {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.veggie-item {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.crusts {
+  font-size: 30px;
+  width: 400px;
+  color: cadetblue;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+/* END OF BOX-BODY and its contents */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* JOB APPLICATION */
+
+.mb-3 {
+  border-width: 200px;
+}
